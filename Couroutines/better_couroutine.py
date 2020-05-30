@@ -12,7 +12,7 @@ def simple_coroutine2(a):
 
 try:
     g = simple_coroutine2(10)
-    print(g.send(None))
+    print(g.send(None)) # This should be priming the subroutine
     print(g.send(100))
     print("Finally..")
     g.send(420)
